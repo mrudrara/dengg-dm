@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS artists (artist_id text NOT NULL PRIMARY KEY, name te
 """)
 
 time_table_create = ("""
-CREATE TABLE IF NOT EXISTS time (start_time bigint NOT NULL PRIMARY KEY, hour text, day text, week text, month text, year text, weekday text);
+CREATE TABLE IF NOT EXISTS time (start_time timestamp NOT NULL PRIMARY KEY, hour int, day int, week int, month int, year int, weekday int);
 """)
 
 # INSERT RECORDS
